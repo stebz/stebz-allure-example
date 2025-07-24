@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Auth page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <script type="text/javascript">
+    function showMessage() {
+      document.getElementById('message').innerHTML = 'You are logged in';
+    }
+  </script>
+  <style>
+    * {
+        font-family: monospace;
+        font-size: 24px;
+    }
+    .center {
+        text-align: center;
+        width: 20em;
+        max-width: 100%;
+        padding: 1em;
+        height: 20em;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="center">
+  <form>
+    <fieldset title="Login form">
+      <label>Username:
+        <input id="username" value=""/>
+      </label>
+      <br/>
+      <label>Password:
+        <input id="password" value=""/>
+      </label>
+    </fieldset>
+    <br/>
+    <input type="button" id="login-button" onclick="return showMessage();" value="Log in"/>
+  </form>
+  <br/>
+  <div id="message" style="color: red"><br/></div>
+</div>
+</body>
+</html>
